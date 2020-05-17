@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>ChooseColor</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose Color</h1>
+      <p>choose the color of the square</p>
+      <div class="rgb">
+        <div class="grouprow">
+          <label for="red-color">Red (R)</label>
+          <input
+            type="range"
+            class="range-value"
+            name="red-color"
+            id="red-color"
+            min="0"
+            max="255"
+            step="1"
+            value="10"
+          />
+          <input
+            type="text"
+            class="color-value"
+            name="red-value"
+            id="red-value"
+            disabled
+          />
+        </div>
+        <div class="grouprow">
+          <label for="green-color">Green (G)</label>
+          <input
+            type="range"
+            class="range-value"
+            name="green-color"
+            id="green-color"
+            min="0"
+            max="255"
+            step="1"
+            value="70"
+          />
+          <input
+            type="text"
+            class="color-value"
+            name="green-value"
+            id="green-value"
+            disabled
+          />
+        </div>
+        <div class="grouprow">
+          <label for="blue-color">Blue (B)</label>
+          <input
+            type="range"
+            class="range-value"
+            name="blue-color"
+            id="blue-color"
+            min="0"
+            max="255"
+            step="1"
+            value="255"
+          />
+          <input
+            type="text"
+            class="color-value"
+            name="blue-value"
+            id="blue-value"
+            disabled
+          />
+        </div>
+      </div>
+      <div id="square"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
